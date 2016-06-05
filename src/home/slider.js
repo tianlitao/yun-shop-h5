@@ -49,7 +49,7 @@ var SliderBox = React.createClass({
   },
   render: function() {
     return (
-      <div className="swiper-container">
+      <div className="swiper-container swiper-container-cover">
         <SliderList data={this.state.data} />
       </div>
     );
