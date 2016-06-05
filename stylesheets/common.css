@@ -5,3 +5,20 @@
 .mt10 {
   margin-top: 10px;
 }
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+img, img a {
+  border: 0;
+  vertical-align: middle;
+}
+
+li, ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

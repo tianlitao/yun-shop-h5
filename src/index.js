@@ -31,3 +31,13 @@ ReactDOM.render(
   <ActiveImg />,
   document.getElementById('active')
 );
+
+ReactDOM.render(
+  <HotProducts url="/mall/api/v1/home/hot_products?per=3" />,
+  document.getElementById('hot_products')
+)
+
+ReactDOM.render(
+  <FooterBox />,
+  document.getElementById('footer')
+)

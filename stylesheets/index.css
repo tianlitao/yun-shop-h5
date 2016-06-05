@@ -26,3 +26,49 @@
   text-align: center;
   padding-left: 10px;
 }
+
+.hot-products {
+  background-color: #ffffff;
+  float: left;
+}
+
+.hot-product-li {
+  float: left;
+  width: 33%;
+}
+.hot-product-li div{
+  width: 100%;
+  padding: 0 11px;
+}
+.hot-product-li a{
+  display: block;
+}
+
+.hot-product-li img{
+  width: 100%;
+}
+
+.hot-product-title {
+  /*background-color: #ffffff;*/
+  font-size: 15px;
+  color: #ca1327;
+  margin: 10px 3px 0 4px;
+}
+
+.show-price {
+  margin-top: 8px;
+  display: block;
+  color: #ed5657;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.show-market-price {
+  color: #888;
+  font-size: 10px;
+  margin: 5px 0 12px 0;
+  text-align: center;
+  display: block;
+  text-decoration: line-through;
+}
