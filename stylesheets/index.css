@@ -1,0 +1,7 @@
+.bar-cover{
+  background: none;!importment
+}
+
+.bar-cover:after{
+  height: 0px; !importment
+}
