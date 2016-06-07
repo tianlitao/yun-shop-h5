@@ -1,3 +1,4 @@
+var React = require('react');
 var SliderList = React.createClass({
   render: function() {
     var commentNodes = this.props.data.map(function (slider) {
@@ -55,3 +56,4 @@ var SliderBox = React.createClass({
     );
   }
 });
+module.exports = SliderList;

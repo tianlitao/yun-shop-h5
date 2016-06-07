@@ -1,3 +1,5 @@
+var React = require('react');
+
 var SearchButton = React.createClass({
   render: function(){
     return (
@@ -12,4 +14,5 @@ var SearchButton = React.createClass({
       </div>
       );
   }
-})
+});
+module.exports = SearchButton;

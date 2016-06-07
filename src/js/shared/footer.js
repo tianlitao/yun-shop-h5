@@ -1,3 +1,5 @@
+var React = require('react');
+
 var FooterBox = React.createClass({
   render: function(){
     return (
@@ -22,4 +24,5 @@ var FooterBox = React.createClass({
       </nav>
       )
   }
-})
+});
+module.exports = FooterBox
