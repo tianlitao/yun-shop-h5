@@ -1,10 +1,11 @@
 var React = require('react');
+var Host = 'http://localhost:3000'
 var SliderList = React.createClass({
   render: function() {
     var commentNodes = this.props.data.map(function (slider) {
       return (
-        <div className="swiper-slide w100">
-          <img className="w100" src={slider.image_url} />
+        <div key={slider.image_url} className="swiper-slide w100">
+          <img className="w100" src={Host + slider.image_url} />
         </div>
       );
     });
@@ -56,4 +57,4 @@ var SliderBox = React.createClass({
     );
   }
 });
-module.exports = SliderList;
+module.exports = SliderBox;

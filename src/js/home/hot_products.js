@@ -1,8 +1,11 @@
+var React = require('react')
+var Host = 'http://localhost:3000'
+
 var HotProductList = React.createClass({
   render: function() {
     var productNodes = this.props.data.map(function (product) {
       return (
-        <li className="hot-product-li">
+        <li key={product.id} className="hot-product-li">
           <div>
             <a>
               <img className="w100" src={product.cover_url} />
@@ -54,3 +57,4 @@ var HotProducts = React.createClass({
     );
   }
 });
+module.exports = HotProducts

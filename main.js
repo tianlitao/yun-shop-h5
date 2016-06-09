@@ -1,51 +1,25 @@
-import React from 'react';
+var React = require('react');
 
-import ReactDOM from 'react-dom';
+var ReactDOM = require('react-dom')
 
-import App from './App.jsx';
+var Index = require('./src/js/home/index')
 
-// import SliderBox from './src/home/slider'
+var ProductList = require('./src/js/product/product')
 
-import SearchButton from './src/js/shared/search'
-
-import SupplierBox from './src/js/home/supplier'
-
-import ActiveImg from './src/js/home/active'
-
-// import HotProducts from './src/home/hot_products'
-
-import FooterBox from './src/js/shared/footer'
+import { Router, Route, IndexRoute, Link, IndexLink, hashHistory } from 'react-router'
 
 
+ReactDOM.render((
+  <Router history={hashHistory}>
+    <Route path="/" coproductmponent={Index}>
+      <IndexRoute component={Index}/>
+      <Route path="/products" component={ProductList}/>
+      <Route path="/product" component={ProductList}/>
+      <Route path="/categories" component={ProductList}/>
+      <Route path="/cart" component={ProductList}/>
+      <Route path="/user" component={ProductList}/>
 
-// ReactDOM.render(
-//   <SliderBox url="/mall/api/v1/home/slider" />,
-//   document.getElementById('slider')
-// );
+    </Route>
+  </Router>
+), document.getElementById('content'));
 
-ReactDOM.render(
-  <SearchButton />,
-  document.getElementById('header_search')
-);
-
-
-ReactDOM.render(
-  <SupplierBox />,
-  document.getElementById('supplier')
-);
-
-
-ReactDOM.render(
-  <ActiveImg />,
-  document.getElementById('active')
-);
-
-// ReactDOM.render(
-//   <HotProducts url="/mall/api/v1/home/hot_products?per=3" />,
-//   document.getElementById('hot_products')
-// )
-
-ReactDOM.render(
-  <FooterBox />,
-  document.getElementById('footer')
-)
