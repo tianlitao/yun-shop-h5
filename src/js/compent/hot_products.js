@@ -1,11 +1,11 @@
 var React = require('react')
-var Host = 'http://localhost:3000'
+var Host = ''
 
 var HotProductList = React.createClass({
   render: function() {
     var productNodes = this.props.data.map(function (product) {
       return (
-        <li key={product.id} className="hot-product-li">
+        <a href={'#/products/' + product.id} key={product.id} className="hot-product-li">
           <div>
             <a>
               <img className="w100" src={product.cover_url} />
@@ -19,7 +19,7 @@ var HotProductList = React.createClass({
               {product.market_price}
             </span>
           </div>
-        </li>
+        </a>
       );
     });
     return (

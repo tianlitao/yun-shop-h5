@@ -1,9 +1,16 @@
+body{
+  background: #fff;
+}
 .w100 {
   width: 100%;
 }
 
 .mt10 {
   margin-top: 10px;
+}
+
+.h40 {
+  height: 40px;
 }
 
 .fl {
@@ -21,4 +28,8 @@ li, ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.bar-tab{
+  position: fixed;
 }

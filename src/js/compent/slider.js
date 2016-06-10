@@ -1,5 +1,5 @@
 var React = require('react');
-var Host = 'http://localhost:3000'
+var Host = ''
 var SliderList = React.createClass({
   render: function() {
     var commentNodes = this.props.data.map(function (slider) {

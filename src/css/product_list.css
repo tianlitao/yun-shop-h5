@@ -1,0 +1,114 @@
+.normal-list {
+  height: 7.5rem;
+  position: relative;
+}
+
+.normal-list a{
+  display: -webkit-box;
+  display: box;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.normal-list a .pro-img{
+  position: relative;
+  height: 6.25rem;
+  width: 6.25rem;
+  margin-left: 10px;
+}
+
+.normal-list a img{
+  display: block;
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+.normal-list a .product-info-box{
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  margin-left: 10px;
+  position: relative;
+  height: 100%;
+  margin-top: -2px;
+  padding-right: 10px;
+}
+
+.normal-list a .product-info-box .product-name{
+  color: #232326;
+  /*font-size: 0.9375rem;*/
+  line-height: 1.25rem;
+  height: 2.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  display: box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+  margin-bottom: 25px;
+}
+
+.normal-list a .product-info-box .product-name span{
+  display: inline;
+  word-break: break-all;
+}
+
+.normal-list a .product-info-box .product-price-m{
+  font-size: 0px;
+  height: 1.25rem;
+  overflow: hidden;
+  width: 100%;
+  line-height: 1.25rem;
+  margin-right: 10px;
+}
+
+.normal-list a .product-info-box .product-price-m em{
+  font-size: 1rem;
+  color: #f23030;
+  margin-right: 3px;
+  display: block;
+  height: 1.25rem;
+  overflow: hidden;
+    float: left;
+}
+
+.normal-list a .product-info-box .product-price-m .price{
+  font-size: 1rem;
+}
+
+.normal-list a .product-info-box .gray-pro-info{
+  color: #848689;
+  font-size: 0.5rem;
+  display: -webkit-box;
+  display: box;
+  margin-top: 4px;
+  overflow: hidden;
+  height: 0.8rem;
+  line-height: 1rem;
+  -webkit-box-align: center;
+  box-align: center;
+}
+
+.normal-list a .product-info-box .gray-pro-info span{
+  margin-right: 8px;
+  display: block;
+}
+
+.normal-list a .product-info-box:after {
+    content: '';
+    height: 1px;
+    width: 200%;
+    position: absolute;
+    left: 0;
+    top: auto;
+    right: auto;
+    bottom: -4px;
+    background-color: #e3e5e9;
+    border: 0px solid transparent;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform-origin: top left;
+    -webkit-transform-origin: top left;
+}

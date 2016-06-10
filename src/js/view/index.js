@@ -1,21 +1,22 @@
 var React = require('react');
 
-var SliderBox = require('./slider')
+var SliderBox = require('../compent/slider')
 
 var SearchButton = require('../shared/search')
 
-var SupplierBox = require('./supplier')
+var SupplierBox = require('../compent/supplier')
 
-var ActiveImg = require('./active')
+var ActiveImg = require('../compent/active')
 
-var HotProducts = require('./hot_products')
+var HotProducts = require('../compent/hot_products')
 
 var FooterBox = require('../shared/footer')
 
-var Host = 'http://localhost:3000'
+var Host = ''
 
 var Index = React.createClass({
   render: function(){
+
     return (
       <div>
         <div id='header_search'>
@@ -33,9 +34,7 @@ var Index = React.createClass({
         <div id="hot_products" class="hot-products">
           <HotProducts url= {Host + "/mall/api/v1/home/hot_products?per=3"}/>
         </div>
-        <div id="footer">
-          <FooterBox />
-        </div>
+        <FooterBox data={this.props.location.pathname}/>
       </div>
       )
   }

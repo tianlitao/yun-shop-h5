@@ -15,7 +15,7 @@ var SupplierList = React.createClass({
   render: function(){
     var supplierNodes = this.props.data.map(function(supplier){
       return (
-        <a key={supplier.code} href="">
+        <a key={supplier.code} href={"#/supplier/" + supplier.code}>
           <img className="supplier_img" src={'src/images/' + supplier.code + '.png'}/>
           <span>{supplier.name}</span>
         </a>
