@@ -19,7 +19,7 @@ var Index = React.createClass({
 
     return (
       <div>
-        <div id='header_search'>
+        <div id='header_search' >
           <SearchButton />
         </div>
         <div id="slider">
